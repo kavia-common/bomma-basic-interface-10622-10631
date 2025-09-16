@@ -1,0 +1,193 @@
+:root {
+  /* Colors */
+  --color-ffffff: #ffffff;
+  --color-3c2f2f: #3c2f2f;
+  --color-6a6a6a: #6a6a6a;
+  --color-d9d9d9: #d9d9d9;
+  --color-ef2a39: #ef2a39;
+  --color-f5f5f5: #f5f5f5;
+  --color-f3f4f6: #f3f4f6;
+  --color-000000: #000000;
+  --color-ff9633: #ff9633;
+
+  /* Typography tokens (font sizes, line-heights, weights; families declared as fallbacks) */
+  --font-lobster: "Lobster", cursive, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-poppins: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-roboto: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-inter: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+
+  /* Typo sizes and line-heights from tokens */
+  --typo-0-size: 45px;      /* Lobster 45 / 60.61 */
+  --typo-0-lh: 60.6094px;
+  --typo-0-weight: 400;
+
+  --typo-1-size: 18px;      /* Poppins 18 / 27 */
+  --typo-1-lh: 27px;
+  --typo-1-weight: 500;
+
+  --typo-2-size: 18px;      /* Roboto 18 / 21.094 */
+  --typo-2-lh: 21.0938px;
+  --typo-2-weight: 500;
+
+  --typo-3-size: 16px;      /* Inter 16 / 19.364 */
+  --typo-3-lh: 19.3636px;
+  --typo-3-weight: 500;
+
+  --typo-4-size: 16px;      /* Roboto 16 / 21.55 */
+  --typo-4-lh: 21.55px;
+  --typo-4-weight: 500;
+
+  /* Colorized text styles from tokens (for convenience) */
+  --typo-5-color: var(--color-3c2f2f);
+  --typo-6-color: var(--color-6a6a6a);
+  --typo-7-color: var(--color-3c2f2f);
+  --typo-8-color: var(--color-f5f5f5);
+  --typo-9-color: var(--color-6a6a6a);
+  --typo-10-color: var(--color-3c2f2f);
+  --typo-11-color: var(--color-3c2f2f);
+
+  /* Spacing scale (from tokens) */
+  --space-3: 3px;
+  --space-4: 4px;
+  --space-5: 5px;
+  --space-6: 6px;
+  --space-7: 7px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-11: 11px;
+  --space-12: 12px;
+  --space-13: 13px;
+  --space-14: 14px;
+  --space-15-46: 15.4627px;
+  --space-15-76: 15.7609px;
+  --space-16: 16px;
+  --space-19: 19px;
+  --space-20: 20px;
+  --space-21: 21px;
+  --space-22: 22px;
+  --space-23-998: 23.998px;
+  --space-24: 24px;
+  --space-26-68: 26.6794px;
+  --space-27: 27px;
+  --space-35: 35px;
+  --space-42: 42px;
+  --space-44: 44px;
+  --space-48: 48px;
+  --space-50: 50px;
+  --space-53: 53px;
+  --space-56: 56px;
+  --space-58: 58px;
+  --space-60: 60px;
+  --space-61: 61px;
+  --space-64: 64px;
+  --space-72: 72px;
+  --space-73: 73px;
+  --space-75: 75px;
+  --space-81: 81px;
+  --space-82: 82px;
+  --space-83: 83px;
+  --space-87: 87px;
+  --space-88: 88px;
+  --space-89: 89px;
+  --space-90: 90px;
+  --space-91: 91px;
+  --space-92: 92px;
+  --space-94: 94px;
+  --space-94-82: 94.8206px;
+  --space-100-59: 100.5938px;
+  --space-104: 104px;
+  --space-106: 106px;
+  --space-110: 110px;
+  --space-112: 112px;
+  --space-117: 117px;
+  --space-120: 120px;
+  --space-121-76: 121.7578px;
+  --space-122-5: 122.5px;
+  --space-128-5: 128.5px;
+  --space-129: 129px;
+  --space-130: 130px;
+  --space-134: 134px;
+  --space-137-7: 137.7px;
+  --space-141: 141px;
+  --space-145: 145px;
+  --space-150: 150px;
+  --space-157: 157px;
+  --space-158: 158px;
+  --space-159: 159px;
+  --space-163: 163px;
+  --space-164: 164px;
+  --space-185: 185px;
+  --space-224: 224px;
+  --space-225: 225px;
+  --space-238: 238px;
+  --space-319: 319px;
+  --space-392: 392px;
+  --space-412: 412px;
+  --space-430: 430px;
+  --space-456: 456px;
+  --space-467: 467px;
+  --space-481: 481px;
+  --space-932: 932px;
+
+  /* Border radius */
+  --radius-20: 20px;
+  --radius-35: 35px;
+
+  /* Shadows from tokens */
+  --shadow-0: 0px 4px 19px 0px rgba(0, 0, 0, 1);
+  --shadow-1: 0px 10px 18px -1px rgba(0, 0, 0, 1);
+  --shadow-2: 0px 6px 17px 0px rgba(0, 0, 0, 1);
+  --shadow-3: 0px 5px 16px 5px rgba(0, 0, 0, 1);
+}
+
+/* Utility classes (optional) for quick application of styles */
+.text-lobster-45 {
+  font-family: var(--font-lobster);
+  font-size: var(--typo-0-size);
+  line-height: var(--typo-0-lh);
+  font-weight: var(--typo-0-weight);
+}
+.text-poppins-18 {
+  font-family: var(--font-poppins);
+  font-size: var(--typo-1-size);
+  line-height: var(--typo-1-lh);
+  font-weight: var(--typo-1-weight);
+}
+.text-roboto-18 {
+  font-family: var(--font-roboto);
+  font-size: var(--typo-2-size);
+  line-height: var(--typo-2-lh);
+  font-weight: var(--typo-2-weight);
+}
+.text-inter-16 {
+  font-family: var(--font-inter);
+  font-size: var(--typo-3-size);
+  line-height: var(--typo-3-lh);
+  font-weight: var(--typo-3-weight);
+}
+
+/* Common surfaces based on styles */
+.surface-white-20 {
+  background-color: var(--color-ffffff);
+  border-radius: var(--radius-20);
+}
+.surface-gray-f3f4f6-20 {
+  background-color: var(--color-f3f4f6);
+  border-radius: var(--radius-20);
+}
+.surface-accent-ef2a39-20 {
+  background-color: var(--color-ef2a39);
+  border-radius: var(--radius-20);
+}
+
+/* Resets for consistency */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
